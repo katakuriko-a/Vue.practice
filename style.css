@@ -1,0 +1,7 @@
+.error {
+  color: rgb(255, 85, 85);
+}
+
+.flip-list-move {
+  transition: .5s;
+}
