@@ -9,13 +9,17 @@
   </head>
   <body>
     <div id="app">
-      <button v-on:click="shuffle">シャッフル</button>
+
+      <div class="table">
+        <h3>日直</h3>
+        <p>生亀</p>
+      </div>
       <transition-group name="flip-list" tag="ul">
         <li v-for="pref in prefs"v :key="pref.name">
           {{ pref.name }}
         </li>
       </transition-group>
-
+      <button v-on:click="shuffle">席替えする</button>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
@@ -24,12 +28,12 @@
         el: "#app",
         data: {
           prefs: [
-            { name: "北海道" },
-            { name: "青森県" },
-            { name: "岩手県" },
-            { name: "宮城県" },
-            { name: "秋田県" },
-            { name: "山形県" },
+            { name: "生亀" },
+            { name: "石川" },
+            { name: "小林" },
+            { name: "佐藤" },
+            { name: "布川" },
+            { name: "輪入道" },
           ],
         },
         methods: {
